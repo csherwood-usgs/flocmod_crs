@@ -1,0 +1,22 @@
+README for flocmod_crs
+
+csherwood@usgs.gov
+
+Flocmod_crs is a FORTRAN version of FlocMod by Romaric Verney, IFREMER and
+modified for testing and reference by Chris Sherwood, USGS.
+Flocmod_crs is derived from flocmod.F90, emailed to Sherwood's home e-mail
+from Verney on 15 Oct 2013. This is included in the repo for reference, but
+is not part of the working code.
+
+To compile on my Win64 laptop from a command window:
+gfortran -c comvars.f90
+gfortran -c flocmod_crs.f90
+gfortran -o flocmod_crs flocmod_crs.o comvars.o
+
+On my Ubuntu desktop (more standard):
+gfortran -c -ffixed-line-length-none comvars.f90
+gfortran -c -ffixed-line-length-none flocmod_crs.f90
+gfortran -o flocmod_crs flocmod_crs.o comvars.o
+
+Note in comvars.f90, the code can be changed to double precision by
+changing the arguments in seleced_real_kind.

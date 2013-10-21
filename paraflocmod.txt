@@ -1,0 +1,58 @@
+:=============================================================================
+:         NAMELIST FOR FLOCMOD MANAGEMENT PARAMETERS
+:=============================================================================
+:
+: namflocmod : FLOCMOD parameters 
+:
+:------------------------------------------------------------------------------
+:
+:  l_ADS    : boolean set to .true. if differential settling aggregation 
+:
+:  l_ASH  : boolean set to .true. if shear aggregation
+:
+:  l_COLLFRAG  : boolean set to .true. if collision-induced fragmentation enable
+:
+:  f_dp0 : Primary particle size (m), typically 4e-6 m
+:
+:  f_nf : Floc fractal dimension, typically ranging from 1.6 to 2.6
+:
+:  f_dmax : (unused) Maximum diameter (m)
+:
+:  f_nb_frag : number of fragments by shear erosion. If binary/ternary : 2.
+:
+:  f_alpha :  flocculation efficiency, ranging from 0 .to 1.
+:
+:  f_beta : shear fragmentation rate
+:
+:  f_ater : for ternary breakup, use 0.5, for binary : 0. 
+:           (a boolean could be better)
+:
+:  f_ero_frac :  fraction of the shear fragmentation term transfered 
+:                to shear erosion. 
+:                Ranging from 0. (no erosion) to 1. (all erosion)
+:
+:  f_ero_nbfrag : Number of fragments induced by shear erosion.   
+:
+:  f_ero_iv : fragment size class (could be changed to a particle 
+:             size or a particle distribution
+:
+:  f_mneg_param : negative mass tolerated to avoid small sub time step (g/l)
+:
+:  f_collfragparam : Fragmentation rate for collision-induced breakup
+:
+&namflocmod
+   l_ADS=.false.
+   l_ASH=.true.
+   l_COLLFRAG=.false.
+   f_dp0=0.000004
+   f_nf=1.9
+   f_dmax=0.001500
+   f_nb_frag=2.
+   f_alpha=0.35
+   f_beta=0.15
+   f_ater=0.
+   f_ero_frac=0.0
+   f_ero_nbfrag=2.
+   f_ero_iv=1
+   f_mneg_param=0.000
+   f_collfragparam=0.01 /
