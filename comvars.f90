@@ -3,8 +3,8 @@ MODULE comvars
   SAVE
 ! l_testcase - if .TRUE. sets G(t) to values from lab experiment
   logical, parameter :: l_testcase = .TRUE.
-!  integer, parameter :: rsh = SELECTED_REAL_KIND(p=6,r=37)
-  integer, parameter :: rsh = SELECTED_REAL_KIND(p=13,r=200)
+  integer, parameter :: rsh = SELECTED_REAL_KIND(p=6,r=37)
+!  integer, parameter :: rsh = SELECTED_REAL_KIND(p=13,r=200)
 
 ! not sure all of these can be set to one
   integer, parameter :: limin =1 
