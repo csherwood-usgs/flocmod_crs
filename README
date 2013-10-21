@@ -2,8 +2,14 @@ README for flocmod_crs
 
 csherwood@usgs.gov
 
-Flocmod_crs is a FORTRAN version of FlocMod by Romaric Verney, IFREMER and
-modified for testing and reference by Chris Sherwood, USGS.
+Flocmod_crs is a FORTRAN version of FlocMod by Romaric Verney, IFREMER.
+Romaric.Verney@ifremer.fr
+
+Verney et al. (2011) Behaviour of a floc population during a tidal cycle:
+Laboratory experiments and numerical modeling.
+Continental Shelf Research 31:564-583.
+
+Modified for testing and reference by Chris Sherwood, USGS.
 Flocmod_crs is derived from flocmod.F90, emailed to Sherwood's home e-mail
 from Verney on 15 Oct 2013. This is included in the repo for reference, but
 is not part of the working code.
